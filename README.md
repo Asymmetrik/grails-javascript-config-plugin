@@ -18,6 +18,10 @@ Add a javascript section to your Config.groovy:
        buz = ['a': 1, 'b': 2, 'c': 3]
     }
 
-Use the tag in your GSP:
+Include the tag in your GSP's head:
 
     <jc:javascriptConfig />
+
+You can access config values from a Config object in Javascript:
+
+    console.log(Config.foo);
